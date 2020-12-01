@@ -38,7 +38,7 @@ function App() {
             <span>{haveNow}</span>
           </div>
           <div className='top-cont'>
-            <span>{(haveNow*100/goal).toFixed(2)}</span>
+            <span>{(haveNow*100/goal).toFixed(2) + '%'}</span>
           </div>
           <div className='top-cont'>
             <span>{goal}</span>
