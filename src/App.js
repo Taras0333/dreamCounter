@@ -4,12 +4,14 @@ import {loadState, saveState} from './getState';
 
 function App() {
 
-  const [goal, updateGoal] = useState(84000);
+  const [goal, updateGoal] = useState(48000);
   const [haveNow, updateHaveNow] = useState(0);
   const [current, updateCurrent] = useState('');
 
   useEffect(() => {
-    updateHaveNow(loadState());
+    if(loadState() !== undefined){
+      updateHaveNow(loadState());
+    }
   }, []);
 
   useEffect(() => {
