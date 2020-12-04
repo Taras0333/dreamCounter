@@ -4,7 +4,7 @@ import {loadState, saveState} from './getState';
 
 function App() {
 
-  const [goal, updateGoal] = useState(48000);
+  const [goal, updateGoal] = useState(14500);
   const [haveNow, updateHaveNow] = useState(0);
   const [current, updateCurrent] = useState('');
 
